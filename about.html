@@ -3,63 +3,162 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>About Us — Farming India</title>
+  <title>About Us — Farm Master</title>
+
   <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .video-section{
+      margin:2.5rem 0;
+      text-align:center;
+    }
+
+    .video-card{
+      max-width:900px;
+      margin:0 auto;
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:0 18px 45px rgba(0,0,0,0.18);
+      background:#000;
+      position:relative;
+    }
+
+    .video-card img{
+      width:100%;
+      display:block;
+      opacity:0.85;
+    }
+
+    .play-overlay{
+      position:absolute;
+      inset:0;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:rgba(0,0,0,0.25);
+    }
+
+    .play-btn{
+      background:#e11d48;
+      color:#fff;
+      padding:0.9rem 1.6rem;
+      border-radius:999px;
+      font-size:1.1rem;
+      font-weight:700;
+      text-decoration:none;
+      box-shadow:0 10px 30px rgba(225,29,72,0.5);
+    }
+
+    .play-btn:hover{
+      background:#be123c;
+    }
+  </style>
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="brand">Farm Master</h1>
-      <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="crops.html">Crops</a>
-        <a href="irrigation.html">Irrigation</a>
-        <a href="robo.html">Robo Farming</a>
-        <a href="diseases.html">Diseases</a>
-        <a href="about.html" class="active">About</a>
-      </nav>
+
+<header class="site-header">
+  <div class="container">
+    <h1 class="brand">Farm Master</h1>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="crops.html">Crops</a>
+      <a href="irrigation.html">Irrigation</a>
+      <a href="info on robo.html">Robo Farming</a>
+      <a href="diseases.html">Diseases</a>
+      <a href="about.html" class="active">About</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <h2>About Farm Master</h2>
+
+  <p class="small-muted">
+    Farm Master is an educational project showcasing modern agriculture,
+    sustainable practices, and robotic farming technologies.
+  </p>
+
+  <p>
+    This platform is designed to help students, farmers, and agriculture
+    enthusiasts understand traditional and modern farming methods through
+    simple explanations, visuals, and real-world examples.
+  </p>
+
+  <!-- VIDEO SECTION -->
+  <section class="video-section">
+    <h3>Farm master</h3>
+
+    <div class="video-card">
+      <img src="https://img.youtube.com/vi/VufSM_CKIe4/maxresdefault.jpg"
+           alt="Farm Robot Video">
+
+      <div class="play-overlay">
+        <a class="play-btn"
+           href="https://youtu.be/VufSM_CKIe4"
+           target="_blank">
+          ▶ Watch on YouTube
+        </a>
+      </div>
     </div>
-  </header>
 
-   
+    <!-- 👇 PHOTOS CENTERED (ONLY CHANGE) -->
+    <div style="display:flex;justify-content:center;gap:3rem;margin:2rem 0;flex-wrap:wrap">
 
-  <main class="container">
-    <section class="content-section">
-      <h2>About Farming India </h2>
-      <p class="small-muted">Farming India is a simple educational demo site that presents key information about crops, irrigation, modern farming technology and plant health relevant to Indian agriculture.</p>
-
-      <div class="author" style="display:flex;align-items:center;gap:1rem;margin-top:1rem;margin-bottom:1rem">
-        <img src="images/photo_sathwik.png" alt="Author photo" style="width:96px;height:96px;border-radius:999px;object-fit:cover;box-shadow:0 8px 20px rgba(8,22,18,0.06)">
-        <div>
-          <div style="font-weight:800;color:var(--accent);font-size:1.05rem">B. Sathwik Reddy</div>
-            <div style="font-size:0.9rem;color:var(--text-muted)">Agriculture Enthusiast & Web Developer</div>
+      <div style="text-align:center">
+        <img src="images/photo_sathwik.png"
+             alt="Sathwik photo"
+             style="width:96px;height:96px;border-radius:999px;object-fit:cover;box-shadow:0 8px 20px rgba(8,22,18,0.06)">
+        <div style="font-weight:800;color:var(--accent);margin-top:0.4rem">
+          B. Sathwik Reddy
         </div>
-        <img src="images/photo_puneeth.png" alt="Author photo" style="width:96px;height:96px;border-radius:999px;object-fit:cover;box-shadow:0 8px 20px rgba(8,22,18,0.06)">
-        <div>
-          <div style="font-weight:800;color:var(--accent);font-size:1.05rem">Puneeth Reddy</div>
-            <div style="font-size:0.9rem;color:var(--text-muted)">Agriculture Enthusiast & Web Developer</div>
+        <div style="font-size:0.9rem;color:var(--text-muted)">
+          Agriculture Enthusiast & Web Developer
         </div>
-       
       </div>
 
-      <h3>Our mission</h3>
-      <p>To provide accessible, practical information about sustainable and modern farming methods that help farmers, students and enthusiasts learn core concepts and explore next steps for real-world adoption.</p>
+      <div style="text-align:center">
+        <img src="images/photo_puneeth.png"
+             alt="Puneeth photo"
+             style="width:96px;height:96px;border-radius:999px;object-fit:cover;box-shadow:0 8px 20px rgba(8,22,18,0.06)">
+        <div style="font-weight:800;color:var(--accent);margin-top:0.4rem">
+          Puneeth Reddy
+        </div>
+        <div style="font-size:0.9rem;color:var(--text-muted)">
+          Agriculture Enthusiast & Web Developer
+        </div>
+      </div>
 
-      <h3>What we cover</h3>
-      <ul>
-        <li>Major crops grown across India and their growing regions.</li>
-        <li>Irrigation techniques and water-wise practices.</li>
-        <li>Robotic and precision-farming technologies.</li>
-        <li>Common crop diseases and basic management suggestions.</li>
-      </ul>
+    </div>
 
-      <h3>Contact & contributions</h3>
-      <p>If you'd like to contribute, suggest corrections, or provide photos and local case studies, please add files to the project or contact the site maintainer (this is a static demo—replace with your contact details).</p>
+    <p style="margin-top:0.8rem;color:#6b7280;font-size:0.9rem">
+      Video opens safely on YouTube due to embed restrictions.
+    </p>
+  </section>
 
-      <p style="margin-top:1rem"><a class="btn" href="index.html">Back to Home</a></p>
-    </section>
-  </main>
+  <h3>What We Cover</h3>
+  <ul>
+    <li>Major crops grown across India</li>
+    <li>Modern irrigation techniques</li>
+    <li>Robotic and AI-based farming</li>
+    <li>Common crop diseases and solutions</li>
+  </ul>
 
-  <footer class="site-footer"><div class="container"><p>&copy; 2025 Farming India</p></div></footer>
+  <h3>Our Mission</h3>
+  <p>
+    To educate students and farmers about smart agriculture, robotics,
+    and sustainable farming practices through simple visual explanations
+    and interactive content.
+  </p>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2025 Farm Master</p>
+  </div>
+</footer>
+
 </body>
 </html>
