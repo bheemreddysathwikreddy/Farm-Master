@@ -3,79 +3,146 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Robo Farming</title>
+  <title>Robo Farming — Farm Master</title>
+
   <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* Center robot layout */
+    .robo-layout{
+      display:grid;
+      grid-template-columns:1fr auto 1fr;
+      gap:2rem;
+      align-items:center;
+      margin:3rem 0;
+    }
+
+    .robot-center{
+      text-align:center;
+    }
+
+    .robot-center img{
+      max-width:360px;
+      width:100%;
+      border-radius:18px;
+      box-shadow:0 20px 45px rgba(0,0,0,0.18);
+    }
+
+    .robot-caption{
+      margin-top:0.6rem;
+      font-size:0.95rem;
+      color:#6b7280;
+    }
+
+    .robo-text{
+      background:rgba(255,255,255,0.85);
+      padding:1.2rem;
+      border-radius:14px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .robo-text h3{
+      margin-top:0;
+      color:#2a7f62;
+    }
+
+    @media(max-width:900px){
+      .robo-layout{
+        grid-template-columns:1fr;
+        text-align:center;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="brand">Farm Master</h1>
-      <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="crops.html">Crops</a>
-        <a href="irrigation.html">Irrigation</a>
-        <a href="robo.html" class="active">Robo Farming</a>
-        <a href="diseases.html">Diseases</a>
-        <a href="about.html">About</a>
-      </nav>
+
+<header class="site-header">
+  <div class="container">
+    <h1 class="brand">Farm Master</h1>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="crops.html">Crops</a>
+      <a href="irrigation.html">Irrigation</a>
+      <a href="info on robo.html" class="active">Robo Farming</a>
+      <a href="diseases.html">Diseases</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <h2>Robo Farming & Smart Agriculture</h2>
+
+  <p class="small-muted">
+    Robotics, automation, and artificial intelligence are reshaping agriculture
+    by improving efficiency, precision, and sustainability.
+  </p>
+
+  <!-- 🤖 IMAGE IN CENTER, MATTER AROUND -->
+  <section class="robo-layout">
+
+    <!-- LEFT MATTER -->
+    <div class="robo-text">
+      <h3>🌱 Precision Farming</h3>
+      <p>
+        Robots use sensors, GPS, and AI to apply water, fertilizers, and pesticides
+        only where needed, reducing waste and cost.
+      </p>
     </div>
-  </header>
 
-  <main class="container">
-    <h2>Robotic & Precision Farming</h2>
-    <p class="small-muted">Technology is transforming Indian agriculture: affordable drones, sensors and automation help farmers increase yields, reduce inputs and manage risk. Below are key components, benefits and practical steps to adopt robotic farming.</p>
-
-    <section class="content-section article">
-      <div>
-        <h3>Drones & Aerial Platforms</h3>
-        <p>Drones collect high-resolution RGB and multispectral imagery for crop scouting, plant-health indices (NDVI/EVI), and canopy mapping. They are also used for targeted foliar spraying and seeding in difficult terrain.</p>
-        <ul>
-          <li><strong>Use-cases:</strong> field scouting, variable-rate spraying, pest hot-spot detection, creating prescription maps.</li>
-          <li><strong>Benefits:</strong> faster coverage, earlier detection of stress, reduced chemical use when spraying is targeted.</li>
-        </ul>
-
-        <h3>Autonomous Tractors & Ground Robots</h3>
-        <p>Autonomous tractors and small robots perform seeding, mechanical weeding, inter-row cultivation and even harvesting for some crops. They use RTK-GPS, LiDAR and computer vision for precise navigation.</p>
-        <ul>
-          <li><strong>Use-cases:</strong> precision seeding, automated weeding, spot-harvesting, payload transport.</li>
-          <li><strong>Benefits:</strong> labor savings, consistent field operations, ability to work longer hours and in challenging conditions.</li>
-        </ul>
-
-        <h3>Sensors, IoT & Edge Devices</h3>
-        <p>Networked soil moisture sensors, weather stations, and crop sensors provide continuous local telemetry. Edge devices can run simple analytics and trigger irrigation or alerts without constant internet connectivity.</p>
-        <ul>
-          <li><strong>Use-cases:</strong> automated irrigation scheduling, frost/freeze alerts, disease risk estimation.</li>
-          <li><strong>Benefits:</strong> better input timing, reduced water and fertilizer waste, improved resilience to weather variability.</li>
-        </ul>
-
-        <h3>Data Analytics, Models & Farm OS</h3>
-        <p>Collected data is processed into actionable recommendations: variable-rate maps, disease risk forecasts and yield estimates. Cloud platforms and simple farm-management dashboards help smallholders and cooperatives collaborate on decisions.</p>
-
-        <h3>Practical Adoption Steps</h3>
-        <ol>
-          <li>Start small: pilot a drone or sensor pack on one field to measure benefits.</li>
-          <li>Use leased equipment or service providers if upfront cost is high.</li>
-          <li>Train local operators on safety, maintenance and data interpretation.</li>
-          <li>Integrate slowly: combine sensor feedback with existing practices rather than replacing them immediately.</li>
-        </ol>
-
-        <h3>Challenges & Considerations</h3>
-        <p>Barriers include cost, connectivity, repair and spare parts, regulatory approvals for spraying drones, and data literacy. Public programs and startups increasingly offer financing, leasing and training to bridge these gaps.</p>
-
-        <h3>Examples & Use-Cases in India</h3>
-        <p>Use-cases in India span precision paddy management with drone-based health mapping, autonomous vegetable transplanters, and sensor-led micro-irrigation for orchards. Cooperative models and government-supported pilots accelerate adoption.</p>
+    <!-- CENTER ROBOT IMAGE -->
+    <div class="robot-center">
+      <img src="images/robot.png" alt="Agricultural Robot">
+      <div class="robot-caption">
+        Prototype agricultural robot for smart farming
       </div>
-      <aside>
-        <img src="images/photo_drone.jpg" alt="Robo farming">
-        <p class="small-muted">Pilot projects and local demos are effective ways to validate technology on your farm before scaling.</p>
-        <img src="images/photo_autonomous_tractors.jpg" alt="Autonomous tractor">
-        <p class="small-muted">Autonomous tractors use GPS and sensors to navigate fields precisely, reducing overlap and missed areas.</p>
-        <img src="images/photo_iot.jpg" alt="IOT">
-        <p class="small-muted">Soil moisture and weather sensors provide real-time data to optimize irrigation and input applications.</p>
-      </aside>
-          </section>
-  </main>
+    </div>
 
-  <footer class="site-footer"><div class="container"><p>&copy; 2025 Farming India</p></div></footer>
+    <!-- RIGHT MATTER -->
+    <div class="robo-text">
+      <h3>🚜 Automated Operations</h3>
+      <p>
+        Robotic systems perform planting, weeding, and harvesting with high accuracy,
+        reducing dependence on manual labor.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- MORE FEATURES BELOW -->
+  <section class="features">
+
+    <article class="card">
+      <h3>📊 Crop Monitoring</h3>
+      <p>Real-time analysis of crop health using sensors and drones.</p>
+    </article>
+
+    <article class="card">
+      <h3>🧪 Soil Analysis</h3>
+      <p>Measuring soil moisture, nutrients, and pH for better decisions.</p>
+    </article>
+
+    <article class="card">
+      <h3>🤖 AI Decision Support</h3>
+      <p>Smart algorithms predict yield, pests, and diseases.</p>
+    </article>
+
+    <article class="card">
+      <h3>🌾 Smart Harvesting</h3>
+      <p>Robots ensure timely and efficient crop harvesting.</p>
+    </article>
+
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2025 Farming India</p>
+  </div>
+</footer>
+
 </body>
 </html>
